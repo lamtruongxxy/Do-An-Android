@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.doan.DoAnAndroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".lichSuChoi"></activity>
+        <activity android:name=".bangXepHang" />
+        <activity android:name=".ChonLinhVuc" />
+        <activity android:name=".ManHinhTroChoi" />
+        <activity
+            android:name=".muaCredit"
+            android:screenOrientation="portrait" /> <!-- khoa activity -->
+        <activity
+            android:name=".quanLyTaiKhoan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manhinhchinh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quenMatKhau"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DangKi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dangnhap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

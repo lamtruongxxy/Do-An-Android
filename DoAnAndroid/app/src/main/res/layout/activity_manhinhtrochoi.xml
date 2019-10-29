@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundall"
+    tools:context=".ManHinhTroChoi">
+
+    <TextView
+        android:id="@+id/txtTenTk2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#2196F3"
+        android:text="Trường Lê"
+
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgcredit2"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSoCredit2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtSoCredit2"
+        app:srcCompat="@drawable/icon_credit" />
+
+    <TextView
+        android:id="@+id/txtSoCredit2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="#FFEB3B"
+        android:text="2.000"
+        android:textAlignment="center"
+
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
+        app:layout_constraintEnd_toStartOf="@+id/imgcredit2"
+        app:layout_constraintTop_toTopOf="@+id/txtTenTk2" />
+
+    <ImageView
+        android:id="@+id/imgtraitim1"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
+        app:layout_constraintEnd_toEndOf="@+id/txtTenTk2"
+        app:layout_constraintTop_toTopOf="@+id/txtTenTk2"
+        app:srcCompat="@drawable/icontym" />
+
+    <ImageView
+        android:id="@+id/imgtraitim2"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgtraitim1"
+        app:layout_constraintEnd_toStartOf="@+id/imgtraitim1"
+        app:layout_constraintTop_toTopOf="@+id/imgtraitim1"
+        app:srcCompat="@drawable/icontym" />
+
+    <ImageView
+        android:id="@+id/imgtraitim3"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
+        app:layout_constraintEnd_toStartOf="@+id/imgtraitim2"
+        app:layout_constraintTop_toTopOf="@+id/txtTenTk2"
+        app:srcCompat="@drawable/icontym" />
+
+    <ImageView
+        android:id="@+id/imgtraitim4"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
+        app:layout_constraintEnd_toStartOf="@+id/imgtraitim5"
+        app:layout_constraintTop_toTopOf="@+id/txtTenTk2"
+        app:srcCompat="@drawable/icontym" />
+
+    <ImageView
+        android:id="@+id/imgtraitim5"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
+        app:layout_constraintEnd_toStartOf="@+id/imgtraitim3"
+        app:layout_constraintTop_toTopOf="@+id/txtTenTk2"
+        app:srcCompat="@drawable/icontym" />
+
+    <TextView
+        android:id="@+id/txtdiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:text="Điểm:"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTenTk2" />
+
+    <TextView
+        android:id="@+id/txtsodiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="1.500"
+        android:textColor="#F44336"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtdiem"
+        app:layout_constraintStart_toEndOf="@+id/txtdiem"
+        app:layout_constraintTop_toTopOf="@+id/txtdiem" />
+
+    <TextView
+        android:id="@+id/txtCauHoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Câu Hỏi Số :"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdiem" />
+
+    <TextView
+        android:id="@+id/txtSoCauHOi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCauHoi"
+        app:layout_constraintStart_toEndOf="@+id/txtCauHoi"
+        app:layout_constraintTop_toTopOf="@+id/txtCauHoi" />
+
+    <TextView
+        android:id="@+id/txtCauHoi1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="Khí nào chiếm 80% thành phần không khí?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoCauHOi" />
+
+    <Button
+        android:id="@+id/btnDapAna"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00BCD4"
+        android:text="N2"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCauHoi1" />
+
+    <Button
+        android:id="@+id/btnDapAnb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00BCD4"
+        android:text="O2"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDapAna" />
+
+    <Button
+        android:id="@+id/btnDapAnc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00BCD4"
+        android:text="H2"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDapAnb" />
+
+    <Button
+        android:id="@+id/btnDapAnd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00BCD4"
+        android:text="C12"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDapAnc" />
+
+    <ProgressBar
+        android:id="@+id/pgrthoigian"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSoCauHOi"
+        app:layout_constraintStart_toEndOf="@+id/txtSoCauHOi"
+        app:layout_constraintTop_toTopOf="@+id/txtSoCauHOi" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDapAnd"
+        app:srcCompat="@drawable/iconback" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imageView23"
+        app:srcCompat="@drawable/icon5050" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toTopOf="@+id/imageView24"
+        app:srcCompat="@drawable/iconpeople" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+        app:layout_constraintStart_toEndOf="@+id/imageView25"
+        app:layout_constraintTop_toTopOf="@+id/imageView25"
+        app:srcCompat="@drawable/iconcall" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+        app:layout_constraintStart_toEndOf="@+id/imageView26"
+        app:layout_constraintTop_toTopOf="@+id/imageView26"
+        app:srcCompat="@drawable/icon_credit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
