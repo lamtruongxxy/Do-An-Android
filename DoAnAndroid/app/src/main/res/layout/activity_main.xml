@@ -11,36 +11,26 @@
         android:id="@+id/txtappgame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/bungee_shade"
-        android:text="Ai Thông Minh Hơn Tui"
+        android:text="Ai Thông Minh Hơn Tui ?"
+        android:textAlignment="center"
         android:textColor="#1058D5"
         android:textSize="40dp"
         android:textStyle="bold"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logocauhoi" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
     <Button
+        android:background="@drawable/botron_buttonmain"
         android:id="@+id/btnplay"
         style="@android:style/Widget.Material.Light.Button.Inset"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Chơi Ngay"
-        android:textColor="#F70808"
+        android:textColor="#fffaf0"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -50,6 +40,7 @@
         />
 
     <Button
+        android:background="@drawable/botron_buttonmain"
         android:id="@+id/btnbangxephang"
         style="@android:style/Widget.Material.Light.Button.Inset"
         android:layout_width="200dp"
@@ -57,13 +48,14 @@
         android:layout_marginTop="40dp"
         android:text="Bảng Xếp Hạng"
         android:textSize="20dp"
-        android:textColor="#F70808"
+        android:textColor="#fffaf0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:onClick="btnbangxephang"
         app:layout_constraintTop_toBottomOf="@+id/btnplay" />
 
     <Button
+        android:background="@drawable/botron_buttonmain"
         android:id="@+id/btnthoat"
         style="@android:style/Widget.Material.Light.Button.Inset"
         android:layout_width="200dp"
@@ -71,9 +63,21 @@
         android:layout_marginTop="40dp"
         android:text="Thoát"
         android:textSize="20dp"
-        android:textColor="#F70808"
+        android:textColor="#fffaf0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnbangxephang"
         android:onClick="exit"/>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="196dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconmatdauhoi" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

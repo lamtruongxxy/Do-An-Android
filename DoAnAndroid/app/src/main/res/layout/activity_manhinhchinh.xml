@@ -70,11 +70,11 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnquanlytk"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#4CAF50"
         android:text="Quản Lý Tài Khoản"
         android:textAllCaps="false"
         android:textSize="18sp"
@@ -84,11 +84,11 @@
         app:layout_constraintTop_toBottomOf="@+id/txtcredit" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnNewGame"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="#03A9F4"
         android:text="Trò Chơi Mới"
         android:textAllCaps="false"
         android:textSize="18sp"
@@ -98,11 +98,11 @@
         app:layout_constraintTop_toBottomOf="@+id/btnquanlytk" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnLichSuGame"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="#9C27B0"
         android:text="Lịch Sử Chơi"
         android:textAllCaps="false"
         android:textSize="18sp"
@@ -112,11 +112,11 @@
         app:layout_constraintTop_toBottomOf="@+id/btnNewGame" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnRank"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="#E91E63"
         android:text="Bảng Xếp Hạng"
         android:textAllCaps="false"
         android:textSize="18sp"
@@ -126,11 +126,11 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLichSuGame" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDangXuat"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="#F44336"
         android:text="Đăng Xuất"
         android:textAllCaps="false"
         android:textSize="18sp"

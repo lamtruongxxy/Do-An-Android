@@ -92,15 +92,13 @@
         app:layout_constraintTop_toBottomOf="@+id/txtHoTen" />
 
     <Button
+        android:background="@drawable/botron_button"
         android:id="@+id/btndangky"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-
         android:layout_marginTop="32dp"
-
-        android:background="#9C27B0"
         android:text="Đăng ký"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

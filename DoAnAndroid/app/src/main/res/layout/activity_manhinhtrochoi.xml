@@ -39,7 +39,6 @@
         android:background="#FFEB3B"
         android:text="2.000"
         android:textAlignment="center"
-
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -162,13 +161,13 @@
         app:layout_constraintTop_toBottomOf="@+id/txtSoCauHOi" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDapAna"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:background="#00BCD4"
         android:text="N2"
         android:textAllCaps="false"
         android:textSize="24sp"
@@ -177,13 +176,13 @@
         app:layout_constraintTop_toBottomOf="@+id/txtCauHoi1" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDapAnb"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:background="#00BCD4"
         android:text="O2"
         android:textAllCaps="false"
         android:textSize="24sp"
@@ -192,13 +191,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDapAna" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDapAnc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:background="#00BCD4"
         android:text="H2"
         android:textAllCaps="false"
         android:textSize="24sp"
@@ -207,13 +206,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDapAnb" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDapAnd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:background="#00BCD4"
         android:text="C12"
         android:textAllCaps="false"
         android:textSize="24sp"

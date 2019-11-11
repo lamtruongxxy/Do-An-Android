@@ -52,11 +52,11 @@
         app:layout_constraintTop_toBottomOf="@+id/txtTenDangNhap" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnLayLaiMatKhau"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:background="#E91E63"
         android:text="Lấy Lại Mật Khẩu"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"

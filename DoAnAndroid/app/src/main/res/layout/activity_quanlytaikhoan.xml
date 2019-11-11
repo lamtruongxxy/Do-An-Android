@@ -103,11 +103,11 @@
         app:layout_constraintTop_toBottomOf="@+id/txtdoihinhđaiien" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnCapNhat"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#2196F3"
         android:text="Cập Nhật"
         android:textColor="#0A0A0A"
         android:textSize="18sp"
@@ -116,11 +116,11 @@
         app:layout_constraintTop_toBottomOf="@+id/edittextNhapLaiMKDoi" />
 
     <Button
+        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnMuaCredit"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="#CDDC39"
         android:text="Mua Credit"
         android:textColor="#000000"
         android:textSize="18sp"

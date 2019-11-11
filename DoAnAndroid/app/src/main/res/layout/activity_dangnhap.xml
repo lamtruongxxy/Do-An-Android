@@ -36,11 +36,11 @@
         app:layout_constraintTop_toBottomOf="@+id/tendangnhap_dangnhap_edittext" />
 
     <Button
+        android:background="@drawable/botron_button"
         android:id="@+id/btnDangNhap"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:background="#3C75E6"
         android:onClick="btnDangNhap"
         android:text="Đăng Nhập"
         android:textColor="#000000"
@@ -50,11 +50,11 @@
         app:layout_constraintTop_toBottomOf="@+id/matkhau_dangnhap_edittext" />
 
     <Button
+        android:background="@drawable/botron_button"
         android:id="@+id/btnDangKy"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#DD9C27B0"
         android:onClick="dangKy"
         android:text="Đăng Kí"
         android:textColor="#000000"
@@ -65,11 +65,11 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDangNhap" />
 
     <Button
+        android:background="@drawable/botron_button"
         android:id="@+id/btnDangKy2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#D0E91E63"
         android:onClick="btnLayMatKhau"
         android:text="Quên Mật Khẩu"
         android:textColor="#000000"
