@@ -103,27 +103,27 @@
         app:layout_constraintTop_toBottomOf="@+id/txtdoihinhđaiien" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
+        android:background="@drawable/color_violet"
         android:id="@+id/btnCapNhat"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Cập Nhật"
-        android:textColor="#0A0A0A"
-        android:textSize="18sp"
+        android:textSize="20sp"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittextNhapLaiMKDoi" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
+        android:background="@drawable/color_violet"
         android:id="@+id/btnMuaCredit"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Mua Credit"
+        android:textSize="20sp"
         android:textColor="#000000"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:onClick="btnMuaCredit"

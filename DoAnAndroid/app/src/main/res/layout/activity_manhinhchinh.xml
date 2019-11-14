@@ -70,73 +70,78 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnquanlytk"
-        android:layout_width="200dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/color_pink"
+        android:onClick="btnQuanLyTaiKhoan"
         android:text="Quản Lý Tài Khoản"
         android:textAllCaps="false"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="btnQuanLyTaiKhoan"
         app:layout_constraintTop_toBottomOf="@+id/txtcredit" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnNewGame"
-        android:layout_width="200dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="@drawable/color_blue"
+        android:onClick="startgame"
         android:text="Trò Chơi Mới"
         android:textAllCaps="false"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="startgame"
         app:layout_constraintTop_toBottomOf="@+id/btnquanlytk" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnLichSuGame"
-        android:layout_width="200dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="@drawable/color_dark_blue"
+        android:onClick="lichSuGame"
         android:text="Lịch Sử Chơi"
         android:textAllCaps="false"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="lichSuGame"
         app:layout_constraintTop_toBottomOf="@+id/btnNewGame" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnRank"
-        android:layout_width="200dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="@drawable/color_green"
+        android:onClick="bangXepHang1"
         android:text="Bảng Xếp Hạng"
         android:textAllCaps="false"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="bangXepHang1"
         app:layout_constraintTop_toBottomOf="@+id/btnLichSuGame" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDangXuat"
-        android:layout_width="200dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="@drawable/color_red"
+        android:onClick="btnDangXuat"
         android:text="Đăng Xuất"
         android:textAllCaps="false"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="btnDangXuat"
         app:layout_constraintTop_toBottomOf="@+id/btnRank" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

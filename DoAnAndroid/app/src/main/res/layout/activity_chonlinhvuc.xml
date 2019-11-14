@@ -107,7 +107,7 @@
         app:srcCompat="@drawable/icontym" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
+        android:background="@drawable/color_violet1"
         android:id="@+id/btnLinhVuc2"
         android:layout_width="270dp"
         android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLinhVuc1" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
+        android:background="@drawable/color_violet"
         android:id="@+id/btnLinhVuc1"
         android:layout_width="270dp"
         android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtChonLinhVuc" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
+        android:background="@drawable/color_blue"
         android:id="@+id/btnLinhVuc3"
         android:layout_width="270dp"
         android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLinhVuc2" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
+        android:background="@drawable/color_dark_blue"
         android:id="@+id/btnLinhVuc4"
         android:layout_width="270dp"
         android:layout_height="wrap_content"
@@ -161,7 +161,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLinhVuc3" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
+        android:background="@drawable/color_green"
         android:id="@+id/btnLinhVuc5"
         android:layout_width="270dp"
         android:layout_height="wrap_content"

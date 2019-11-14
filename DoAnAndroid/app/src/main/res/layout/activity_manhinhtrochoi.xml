@@ -8,6 +8,18 @@
     tools:context=".ManHinhTroChoi">
 
     <TextView
+        android:id="@+id/txttime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="s"
+        android:textColor="#F44336"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txttime"
+        app:layout_constraintStart_toEndOf="@+id/txttime"
+        app:layout_constraintTop_toTopOf="@+id/txttime" />
+
+    <TextView
         android:id="@+id/txtTenTk2"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -127,7 +139,7 @@
         android:textSize="28dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintHorizontal_bias="0.326"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtdiem" />
 
@@ -161,13 +173,13 @@
         app:layout_constraintTop_toBottomOf="@+id/txtSoCauHOi" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDapAna"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/color_blue"
         android:text="N2"
         android:textAllCaps="false"
         android:textSize="24sp"
@@ -176,13 +188,13 @@
         app:layout_constraintTop_toBottomOf="@+id/txtCauHoi1" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDapAnb"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/color_blue"
         android:text="O2"
         android:textAllCaps="false"
         android:textSize="24sp"
@@ -191,13 +203,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDapAna" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDapAnc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/color_blue"
         android:text="H2"
         android:textAllCaps="false"
         android:textSize="24sp"
@@ -206,29 +218,19 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDapAnb" />
 
     <Button
-        android:background="@drawable/botron_buttonlinhvuc"
         android:id="@+id/btnDapAnd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/color_blue"
         android:text="C12"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDapAnc" />
-
-    <ProgressBar
-        android:id="@+id/pgrthoigian"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSoCauHOi"
-        app:layout_constraintStart_toEndOf="@+id/txtSoCauHOi"
-        app:layout_constraintTop_toTopOf="@+id/txtSoCauHOi" />
 
     <ImageView
         android:id="@+id/imageView23"
@@ -279,5 +281,18 @@
         app:layout_constraintStart_toEndOf="@+id/imageView26"
         app:layout_constraintTop_toTopOf="@+id/imageView26"
         app:srcCompat="@drawable/icon_credit" />
+
+    <TextView
+        android:id="@+id/txttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:text="30"
+        android:textColor="#F44336"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSoCauHOi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtSoCauHOi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

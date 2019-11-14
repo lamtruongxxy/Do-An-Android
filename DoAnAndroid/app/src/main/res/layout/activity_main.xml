@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundall"
+    android:background="@drawable/backgound1"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,7 +15,7 @@
         android:fontFamily="@font/bungee_shade"
         android:text="Ai Thông Minh Hơn Tui ?"
         android:textAlignment="center"
-        android:textColor="#1058D5"
+        android:textColor="#2196F3"
         android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,14 +23,14 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
     <Button
-        android:background="@drawable/botron_buttonmain"
+        android:background="@drawable/color_blue"
         android:id="@+id/btnplay"
-        style="@android:style/Widget.Material.Light.Button.Inset"
+
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Chơi Ngay"
-        android:textColor="#fffaf0"
+        android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -40,34 +40,32 @@
         />
 
     <Button
-        android:background="@drawable/botron_buttonmain"
         android:id="@+id/btnbangxephang"
-        style="@android:style/Widget.Material.Light.Button.Inset"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/color_blue"
+        android:onClick="btnbangxephang"
         android:text="Bảng Xếp Hạng"
+        android:textColor="#000000"
         android:textSize="20dp"
-        android:textColor="#fffaf0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="btnbangxephang"
         app:layout_constraintTop_toBottomOf="@+id/btnplay" />
 
     <Button
-        android:background="@drawable/botron_buttonmain"
         android:id="@+id/btnthoat"
-        style="@android:style/Widget.Material.Light.Button.Inset"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/color_orange"
+        android:onClick="exit"
         android:text="Thoát"
+        android:textColor="#000000"
         android:textSize="20dp"
-        android:textColor="#fffaf0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnbangxephang"
-        android:onClick="exit"/>
+        app:layout_constraintTop_toBottomOf="@+id/btnbangxephang" />
 
     <ImageView
         android:id="@+id/imageView14"
@@ -78,6 +76,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconmatdauhoi" />
+        app:srcCompat="@drawable/iconlogo1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
