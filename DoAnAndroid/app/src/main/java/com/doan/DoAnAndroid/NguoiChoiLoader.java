@@ -20,6 +20,6 @@ public class NguoiChoiLoader extends AsyncTaskLoader<String> {
     @Nullable
     @Override
     public String loadInBackground() {
-         return NetWorkUtils.getJSONData("nguoi-choi","GET");
+         return NetWorkUtils.getJSONData("nguoi-choi/xep-hang","GET");
     }
 }

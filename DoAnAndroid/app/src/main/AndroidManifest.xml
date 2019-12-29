@@ -12,10 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lichSuChoi"></activity>
-        <activity android:name=".bangXepHang" />
-        <activity android:name=".ChonLinhVuc" />
-        <activity android:name=".ManHinhTroChoi" />
+        <activity android:name=".lichSuChoi"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".bangXepHang"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ChonLinhVuc"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ManHinhTroChoi"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".muaCredit"
             android:screenOrientation="portrait" /> <!-- khoa activity -->

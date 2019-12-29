@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundall"
+    android:background="@drawable/background"
     tools:context=".manhinhchinh">
 
     <TextView
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtappgame"
-        app:srcCompat="@drawable/iconuser" />
+        app:srcCompat="@drawable/player" />
 
     <TextView
         android:id="@+id/txthoten"

@@ -4,40 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgound1"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txtappgame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/bungee_shade"
-        android:text="Ai Thông Minh Hơn Tui ?"
-        android:textAlignment="center"
-        android:textColor="#2196F3"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
-
     <Button
-        android:background="@drawable/color_blue"
         android:id="@+id/btnplay"
-
         android:layout_width="200dp"
+
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/color_blue"
+        android:onClick="playgame"
         android:text="Chơi Ngay"
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtappgame"
-        android:onClick="playgame"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
         android:id="@+id/btnbangxephang"
@@ -68,14 +52,12 @@
         app:layout_constraintTop_toBottomOf="@+id/btnbangxephang" />
 
     <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="196dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="84dp"
+        android:id="@+id/imageView7"
+        android:layout_width="369dp"
+        android:layout_height="357dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconlogo1" />
+        app:srcCompat="@drawable/logogame" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
