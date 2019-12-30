@@ -142,6 +142,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRank" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRank"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

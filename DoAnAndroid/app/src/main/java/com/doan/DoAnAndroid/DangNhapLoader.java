@@ -1,6 +1,7 @@
 package com.doan.DoAnAndroid;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import java.util.HashMap;
 

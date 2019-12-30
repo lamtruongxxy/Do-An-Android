@@ -1,9 +1,9 @@
 package com.doan.DoAnAndroid;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -57,18 +57,12 @@ public class MainActivity extends AppCompatActivity  {
            // }
        // });
     }
-
     public void exit(View view) {
         mediaPlayer.stop();
-        //Khoi tao lai Activity main deo can tao cai nay
-        //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        //startActivity(intent);
-
-        // Tao su kien ket thuc app
         Intent startMain = new Intent(Intent.ACTION_MAIN);
-        startMain.addCategory(Intent.CATEGORY_HOME);
-        startActivity(startMain);
-        finish();
+          startMain.addCategory(Intent.CATEGORY_HOME);
+          startActivity(startMain);
+          finish();
     }
 
 
@@ -86,4 +80,5 @@ public class MainActivity extends AppCompatActivity  {
         Intent intent = new Intent(this,bangXepHang.class);
         startActivity(intent);
     }
+
 }

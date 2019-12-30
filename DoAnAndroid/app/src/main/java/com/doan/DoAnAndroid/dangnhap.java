@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -42,7 +43,7 @@ public class dangnhap extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        String token = sharedPreferences.getString("TOKEN", "");
+        String token = sharedPreferences.getString("TOKEN", ""); // luu tokeen
         Log.d("TOKEN", token);
         if (token != "") {
             Intent intent = new Intent(this, manhinhchinh.class);
@@ -57,7 +58,7 @@ public class dangnhap extends AppCompatActivity {
         AnhXa();
 
         String token = sharedPreferences.getString("TOKEN", "");
-        Log.d("TOKEN", token);
+        Log.d("tokenabc", token); // tesst
         if (token != "") {
             Intent intent = new Intent(this, manhinhchinh.class);
             startActivity(intent);
@@ -85,7 +86,9 @@ public class dangnhap extends AppCompatActivity {
        // Intent intent =new Intent(this,quenMatKhau.class);
        // startActivity(intent);
     }
-
+    public void thongBaoThatBai(){
+        taoThongBao("Thông báo","Đăng nhập thất bại");
+    }
     public void btnDangNhap(View view) {
        // Intent intent =new Intent(this,manhinhchinh.class);
        // startActivity(intent);
@@ -95,6 +98,9 @@ public class dangnhap extends AppCompatActivity {
         String tenDangNhap = txtTenDangNhap.getText().toString();
         String matKhau = txtMatKhau.getText().toString();
 
+        if(tenDangNhap.equals("")||matKhau.equals("")){
+            thongBaoThatBai();
+        }
         final ProgressDialog dialog = new ProgressDialog(this);
         dialog.setTitle("Đang đăng nhập");
         dialog.setMessage("Đang xử lý...");
@@ -102,18 +108,20 @@ public class dangnhap extends AppCompatActivity {
         new DangNhapLoader(){
             @Override
             protected void onPostExecute(String s) {
-                dialog.cancel();
                 try {
                     JSONObject json = new JSONObject(s);
-                    boolean success = json.getBoolean("success");
+                    boolean success = json.getBoolean("status");
                     if (success) {
+                        dialog.cancel();
                         String token = "Bearer " + json.getString("token");
                         editor.putString("TOKEN", token);
                         editor.commit();
                         launchActivityMenu();
-                    } else {
+                    }
+                    else {
                         String msg = json.getString("msg");
                         taoThongBao("Thông báo", msg).show();
+                        //thongBaoThatBai();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -127,9 +135,10 @@ public class dangnhap extends AppCompatActivity {
         builder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                setIntent(dangnhap.class);
             }
         });
         return builder.create();
     }
+
 }

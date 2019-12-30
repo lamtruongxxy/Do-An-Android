@@ -100,6 +100,7 @@
         android:layout_centerVertical="true"
         android:layout_marginTop="32dp"
         android:text="Đăng ký"
+        android:onClick="clickDangKy"
         android:textSize="20sp"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"

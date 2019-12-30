@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Ai Thông Minh Hơn Tui</string>
+    <string name="file_name_shared_preferences">com.doan.DoAnAndroid</string>
 </resources>
