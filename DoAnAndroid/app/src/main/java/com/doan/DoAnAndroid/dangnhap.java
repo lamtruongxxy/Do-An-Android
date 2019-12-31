@@ -63,7 +63,7 @@ public class dangnhap extends AppCompatActivity {
             Intent intent = new Intent(this, manhinhchinh.class);
             startActivity(intent);
         }
-
+//
         btnQuenMatKhau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,9 +86,6 @@ public class dangnhap extends AppCompatActivity {
        // Intent intent =new Intent(this,quenMatKhau.class);
        // startActivity(intent);
     }
-    public void thongBaoThatBai(){
-        taoThongBao("Thông báo","Đăng nhập thất bại");
-    }
     public void btnDangNhap(View view) {
        // Intent intent =new Intent(this,manhinhchinh.class);
        // startActivity(intent);
@@ -98,9 +95,6 @@ public class dangnhap extends AppCompatActivity {
         String tenDangNhap = txtTenDangNhap.getText().toString();
         String matKhau = txtMatKhau.getText().toString();
 
-        if(tenDangNhap.equals("")||matKhau.equals("")){
-            thongBaoThatBai();
-        }
         final ProgressDialog dialog = new ProgressDialog(this);
         dialog.setTitle("Đang đăng nhập");
         dialog.setMessage("Đang xử lý...");
@@ -108,20 +102,23 @@ public class dangnhap extends AppCompatActivity {
         new DangNhapLoader(){
             @Override
             protected void onPostExecute(String s) {
+                dialog.cancel();
                 try {
                     JSONObject json = new JSONObject(s);
                     boolean success = json.getBoolean("status");
-                    if (success) {
-                        dialog.cancel();
+                    if (success==false) {
+                        String msg = json.getString("message");
+                        Log.d("ThongBaoMSG1",msg);
+                        taoThongBao("Thông báo", msg).show();
+                    }
+                    else {
+
+                        String msg = json.getString("message");
+                        Log.d("ThongBaoMSG",msg);
                         String token = "Bearer " + json.getString("token");
                         editor.putString("TOKEN", token);
                         editor.commit();
                         launchActivityMenu();
-                    }
-                    else {
-                        String msg = json.getString("msg");
-                        taoThongBao("Thông báo", msg).show();
-                        //thongBaoThatBai();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

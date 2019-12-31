@@ -44,6 +44,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:enabled="false"
         android:hint="lamtruongxyz@gmail.com"
         android:inputType="textEmailAddress"
         android:textSize="18dp"
@@ -96,6 +97,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:enabled="false"
         android:hint="Trường Lê"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,17 +117,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittextNhapLaiMKDoi" />
 
-    <Button
-        android:background="@drawable/color_violet"
-        android:id="@+id/btnMuaCredit"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Mua Credit"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="btnMuaCredit"
-        app:layout_constraintTop_toBottomOf="@+id/btnCapNhat" />
 </androidx.constraintlayout.widget.ConstraintLayout>

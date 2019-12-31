@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -90,7 +91,7 @@ public class DangKi extends AppCompatActivity {
                         editor.commit();
                         finish();
                     } else {
-                        String msg = obj.getString("msg");
+                        String msg = obj.getString("message");
                         taoThongBao("Lỗi", msg).show();
                     }
                 } catch (JSONException e) {

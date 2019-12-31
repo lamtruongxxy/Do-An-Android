@@ -6,9 +6,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.loader.content.AsyncTaskLoader;
 
-public class LinhVucLoader extends AsyncTaskLoader <String> {
+public class CreditLoader extends AsyncTaskLoader<String> {
     private String token;
-    public LinhVucLoader(@NonNull Context context) {
+
+    @Override
+    protected void onStartLoading() {
+        super.onStartLoading();
+        forceLoad();
+    }
+
+    public CreditLoader(@NonNull Context context ,String token) {
         super(context);
         this.token = token;
     }
@@ -16,12 +23,6 @@ public class LinhVucLoader extends AsyncTaskLoader <String> {
     @Nullable
     @Override
     public String loadInBackground() {
-        return NetWorkUtils.doRequest("linh-vuc","GET",null,token);
+        return NetWorkUtils.doRequest("goi-credit","GET",null,token);
     }
-    @Override
-    protected void onStartLoading() {
-        super.onStartLoading();
-        forceLoad();
-    }
-
 }

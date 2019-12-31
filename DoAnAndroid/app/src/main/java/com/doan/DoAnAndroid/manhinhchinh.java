@@ -78,4 +78,9 @@ public class manhinhchinh extends AppCompatActivity {
         Intent intent =new Intent(this,bangXepHang.class);
         startActivity(intent);
     }
+
+    public void btnMuaCredit(View view) {
+        Intent intent =new Intent(this,muaCredit.class);
+        startActivity(intent);
+    }
 }
