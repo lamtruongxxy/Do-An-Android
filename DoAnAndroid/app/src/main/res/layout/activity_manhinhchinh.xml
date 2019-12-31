@@ -146,6 +146,22 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLichSuGame" />
 
     <Button
+        android:id="@+id/btnGoiCredit"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/color_orange"
+        android:onClick="btnMuaCredit"
+        android:text="Mua Credit"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRank" />
+
+    <Button
         android:id="@+id/btnDangXuat"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
