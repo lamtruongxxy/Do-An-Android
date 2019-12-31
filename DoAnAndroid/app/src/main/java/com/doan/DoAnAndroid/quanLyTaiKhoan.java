@@ -16,8 +16,5 @@ public class quanLyTaiKhoan extends AppCompatActivity {
         setContentView(R.layout.activity_quanlytaikhoan);
     }
 
-    public void btnMuaCredit(View view) {
-        Intent intent =new Intent(this,muaCredit.class);
-        startActivity(intent);
-    }
+
 }
