@@ -8,7 +8,7 @@ import androidx.loader.content.AsyncTaskLoader;
 
 public class LinhVucLoader extends AsyncTaskLoader <String> {
     private String token;
-    public LinhVucLoader(@NonNull Context context) {
+    public LinhVucLoader(@NonNull Context context, String token) {
         super(context);
         this.token = token;
     }

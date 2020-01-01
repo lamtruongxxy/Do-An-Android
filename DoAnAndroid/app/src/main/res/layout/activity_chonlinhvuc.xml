@@ -38,42 +38,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgtraitim6"
-        android:layout_width="28dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgtraitim7"
-        app:layout_constraintEnd_toStartOf="@+id/imgtraitim7"
-        app:layout_constraintTop_toTopOf="@+id/imgtraitim7"
-        app:srcCompat="@drawable/icontym" />
-
-    <ImageView
-        android:id="@+id/imgtraitim7"
-        android:layout_width="28dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgtraitim8"
-        app:layout_constraintEnd_toStartOf="@+id/imgtraitim8"
-        app:layout_constraintTop_toTopOf="@+id/imgtraitim8"
-        app:srcCompat="@drawable/icontym" />
-
-    <ImageView
-        android:id="@+id/imgtraitim8"
-        android:layout_width="28dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgtraitim9"
-        app:layout_constraintEnd_toStartOf="@+id/imgtraitim9"
-        app:layout_constraintTop_toTopOf="@+id/imgtraitim9"
-        app:srcCompat="@drawable/icontym" />
-
-    <ImageView
-        android:id="@+id/imgtraitim9"
-        android:layout_width="28dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk3"
-        app:layout_constraintEnd_toEndOf="@+id/txtTenTk3"
-        app:layout_constraintTop_toTopOf="@+id/txtTenTk3"
-        app:srcCompat="@drawable/icontym" />
-
-    <ImageView
         android:id="@+id/imgcredit3"
         android:layout_width="26dp"
         android:layout_height="25dp"
@@ -97,80 +61,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTenTk3" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="28dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgtraitim6"
-        app:layout_constraintEnd_toStartOf="@+id/imgtraitim6"
-        app:layout_constraintTop_toTopOf="@+id/imgtraitim6"
-        app:srcCompat="@drawable/icontym" />
-
-    <Button
-        android:background="@drawable/color_violet1"
-        android:id="@+id/btnLinhVuc2"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="470dp"
         android:layout_marginTop="16dp"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLinhVuc1" />
+        app:layout_constraintTop_toBottomOf="@+id/txtChonLinhVuc"
+        app:layout_constraintVertical_bias="0.0">
 
-    <Button
-        android:background="@drawable/color_violet"
-        android:id="@+id/btnLinhVuc1"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtChonLinhVuc" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvLinhVuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:background="@drawable/color_blue"
-        android:id="@+id/btnLinhVuc3"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLinhVuc2" />
-
-    <Button
-        android:background="@drawable/color_dark_blue"
-        android:id="@+id/btnLinhVuc4"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLinhVuc3" />
-
-    <Button
-        android:background="@drawable/color_green"
-        android:id="@+id/btnLinhVuc5"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="btnmanhinhtrochoi"
-        app:layout_constraintTop_toBottomOf="@+id/btnLinhVuc4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
