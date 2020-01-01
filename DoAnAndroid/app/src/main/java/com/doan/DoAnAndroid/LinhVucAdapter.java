@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,13 +24,13 @@ public class LinhVucAdapter extends RecyclerView.Adapter<LinhVucAdapter.LinhVucV
     }
     @NonNull
     @Override
-    public LinhVucViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public LinhVucAdapter.LinhVucViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = inflater.inflate(R.layout.linh_vuc_item, parent, false);
         return new LinhVucViewHolder(itemView, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull LinhVucViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull LinhVucAdapter.LinhVucViewHolder holder, int position) {
         clsLinhVuc linhVuc = this.mListLinhVuc.get(position);
         holder.txtLinhVuc.setText(linhVuc.getTenLinhVuc());
     }

@@ -59,47 +59,12 @@
         app:layout_constraintTop_toTopOf="@+id/txtTenTk2" />
 
     <ImageView
-        android:id="@+id/imgtraitim1"
-        android:layout_width="28dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
-        app:layout_constraintEnd_toEndOf="@+id/txtTenTk2"
-        app:layout_constraintTop_toTopOf="@+id/txtTenTk2"
-        app:srcCompat="@drawable/icontym" />
-
-    <ImageView
-        android:id="@+id/imgtraitim2"
-        android:layout_width="28dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgtraitim1"
-        app:layout_constraintEnd_toStartOf="@+id/imgtraitim1"
-        app:layout_constraintTop_toTopOf="@+id/imgtraitim1"
-        app:srcCompat="@drawable/icontym" />
-
-    <ImageView
-        android:id="@+id/imgtraitim3"
-        android:layout_width="28dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
-        app:layout_constraintEnd_toStartOf="@+id/imgtraitim2"
-        app:layout_constraintTop_toTopOf="@+id/txtTenTk2"
-        app:srcCompat="@drawable/icontym" />
-
-    <ImageView
         android:id="@+id/imgtraitim4"
         android:layout_width="28dp"
         android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
-        app:layout_constraintEnd_toStartOf="@+id/imgtraitim5"
-        app:layout_constraintTop_toTopOf="@+id/txtTenTk2"
-        app:srcCompat="@drawable/icontym" />
-
-    <ImageView
-        android:id="@+id/imgtraitim5"
-        android:layout_width="28dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
-        app:layout_constraintEnd_toStartOf="@+id/imgtraitim3"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/txtTenTk2"
         app:srcCompat="@drawable/icontym" />
 
@@ -121,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="1.500"
+        android:text="250"
         android:textColor="#F44336"
         android:textSize="40dp"
         android:textStyle="bold"
@@ -294,5 +259,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/txtSoCauHOi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtSoCauHOi" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="X5"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTenTk2"
+        app:layout_constraintEnd_toEndOf="@+id/txtTenTk2"
+        app:layout_constraintTop_toTopOf="@+id/imgtraitim4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

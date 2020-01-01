@@ -1,5 +1,9 @@
 package com.doan.DoAnAndroid;
 
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,10 +11,6 @@ import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -39,8 +39,8 @@ public class muaCredit extends AppCompatActivity implements LoaderManager.Loader
         this.rcvGoiCredit = this.findViewById(R.id.rcvGoiCredit);
         this.adapter = new CreditAdapter(this, this.mLstCredit);
         this.rcvGoiCredit.setAdapter(this.adapter);
-        this.rcvGoiCredit.setLayoutManager(new GridLayoutManager(this, 2));
-        this.rcvGoiCredit.addItemDecoration(new CreditGD(2, 64, true));
+        this.rcvGoiCredit.setLayoutManager(new GridLayoutManager(this, 2)); // phan ra 2 bên
+        this.rcvGoiCredit.addItemDecoration(new CreditGD(2, 64, true)); //chia khoang cach
 
         sharedPreferences = getSharedPreferences(FILE_NAME_SHAREREF, MODE_PRIVATE);
         editor = sharedPreferences.edit();
