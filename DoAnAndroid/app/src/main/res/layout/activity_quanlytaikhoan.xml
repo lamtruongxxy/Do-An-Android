@@ -8,19 +8,30 @@
     tools:context=".quanLyTaiKhoan">
 
     <EditText
-        android:id="@+id/edittextDoiMK"
+        android:id="@+id/edittextDiemCaoNhat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:enabled="false"
+        android:inputType="textEmailAddress"
+        android:text="999"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/edittextDoiMK"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:hint="Đổi Mật Khẩu"
         android:inputType="textPassword"
+        android:textColor="#000000"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittextEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/edittextDiemCaoNhat" />
 
     <EditText
         android:id="@+id/edittextNhapLaiMKDoi"
@@ -31,6 +42,7 @@
         android:layout_marginEnd="32dp"
         android:hint="Nhập Lại Mật Khẩu"
         android:inputType="textPassword"
+        android:textColor="#000000"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -45,8 +57,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:enabled="false"
-        android:hint="lamtruongxyz@gmail.com"
         android:inputType="textEmailAddress"
+        android:textColor="#000000"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,23 +110,36 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:enabled="false"
-        android:hint="Trường Lê"
+        android:textColor="#000000"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtdoihinhđaiien" />
 
     <Button
-        android:background="@drawable/color_violet"
         android:id="@+id/btnCapNhat"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/color_violet"
+        android:onClick="btnCapNhatMK"
         android:text="Cập Nhật"
-        android:textSize="20sp"
         android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittextNhapLaiMKDoi" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Điểm Cao Nhất: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edittextDoiMK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

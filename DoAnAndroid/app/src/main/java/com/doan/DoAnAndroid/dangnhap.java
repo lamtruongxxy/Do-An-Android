@@ -117,6 +117,7 @@ public class dangnhap extends AppCompatActivity {
                         String id = json.getJSONObject("user").getString("id");
                         String ten_dang_nhap = json.getJSONObject("user").getString("ten_dang_nhap");
                         Log.d("USER_ID",id+"");
+                        Log.d("Ten_dangNhap",ten_dang_nhap);
                         editor.putString("HOTEN",ten_dang_nhap);
                         editor.commit();
                         editor.putString("ID_USER",id);

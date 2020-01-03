@@ -7,22 +7,6 @@
     android:background="@drawable/background"
     tools:context=".manhinhchinh">
 
-    <Button
-        android:id="@+id/btnGoiCredit"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/color_orange"
-        android:onClick="btnMuaCredit"
-        android:text="Mua Credit"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRank" />
-
     <TextView
         android:id="@+id/txtappgame"
         android:layout_width="wrap_content"
@@ -42,20 +26,21 @@
         android:id="@+id/imageView4"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtappgame"
         app:srcCompat="@drawable/player" />
 
     <TextView
-        android:id="@+id/txthoten"
+        android:id="@+id/txtTenCuaTk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Trường Lê"
+        android:textAllCaps="true"
         android:textColor="#9C27B0"
-        android:textSize="20dp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +53,7 @@
         android:layout_marginStart="165dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthoten"
+        app:layout_constraintTop_toBottomOf="@+id/txtTenCuaTk"
         app:srcCompat="@drawable/icon_credit" />
 
     <TextView
@@ -82,7 +67,7 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/txthoten"
+        app:layout_constraintTop_toBottomOf="@+id/txtTenCuaTk"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button

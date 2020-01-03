@@ -1,6 +1,10 @@
 package com.doan.DoAnAndroid;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.loader.app.LoaderManager;
+import androidx.loader.content.Loader;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -8,15 +12,27 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
-public class manhinhchinh extends AppCompatActivity {
+import com.doan.DoAnAndroid.Loader.ThongTinNguoiChoiLoader;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class manhinhchinh extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
     MediaPlayer mediaPlayer; // khai bao nhac
+
+    private TextView tenTk;
+    private TextView soCredit;
 
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
 
-    private static  final String FILE_NAME_SHAREREF="com.doan.DoAnAndroid";
+    private String token;
+
+    private final static String FILE_NAME_SHAREREF = "com.doan.DoAnAndroid";
 
     public void setIntent (Class lop){
         Intent intent = new Intent(getApplicationContext(),lop);
@@ -28,15 +44,28 @@ public class manhinhchinh extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manhinhchinh);
 
+        tenTk=findViewById(R.id.txtTenCuaTk);
+        soCredit=findViewById(R.id.txtcredit);
+
         sharedPreferences = getSharedPreferences(FILE_NAME_SHAREREF, MODE_PRIVATE);
         editor = sharedPreferences.edit();
-        String token = sharedPreferences.getString("TOKEN", "");
+
+        token = sharedPreferences.getString("TOKEN", "");
         if (token == "") {
             finish();
         }
+        if (getSupportLoaderManager().getLoader(0) != null) {
+            getSupportLoaderManager().initLoader(0, null, this);
+        }
+        getSupportLoaderManager().restartLoader(0, null, this);
 
         mediaPlayer = MediaPlayer.create(manhinhchinh.this,R.raw.musicbackground2);
         mediaPlayer.start();
+    }
+    @Override
+    public void finish() {
+        super.finish();
+        startActivity(new Intent(getApplicationContext(),manhinhchinh.class));
     }
     public AlertDialog taoThongBao(String tieuDe, String thongBao) {
         //tạo hộp thoại thông báo
@@ -82,5 +111,28 @@ public class manhinhchinh extends AppCompatActivity {
     public void btnMuaCredit(View view) {
         Intent intent =new Intent(this,muaCredit.class);
         startActivity(intent);
+    }
+
+    @NonNull
+    @Override
+    public Loader<String> onCreateLoader(int id, @Nullable Bundle args) {
+        return new ThongTinNguoiChoiLoader(this,token);
+    }
+
+    @Override
+    public void onLoadFinished(@NonNull Loader<String> loader, String data) {
+        try {
+            JSONObject jsonObject = new JSONObject(data);
+            Log.d("ThongTintaikhoan",data);//test xem có lấy dữ lịu đc không
+            tenTk.setText(jsonObject.getString("ten_dang_nhap"));
+            soCredit.setText(jsonObject.getString("credit"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onLoaderReset(@NonNull Loader<String> loader) {
+
     }
 }
