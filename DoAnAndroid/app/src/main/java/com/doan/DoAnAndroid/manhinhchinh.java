@@ -22,8 +22,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class manhinhchinh extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
-    MediaPlayer mediaPlayer; // khai bao nhac
-
     private TextView tenTk;
     private TextView soCredit;
 
@@ -59,8 +57,6 @@ public class manhinhchinh extends AppCompatActivity implements LoaderManager.Loa
         }
         getSupportLoaderManager().restartLoader(0, null, this);
 
-        mediaPlayer = MediaPlayer.create(manhinhchinh.this,R.raw.musicbackground2);
-        mediaPlayer.start();
     }
     @Override
     public void finish() {
@@ -84,7 +80,6 @@ public class manhinhchinh extends AppCompatActivity implements LoaderManager.Loa
 //        startActivity(intent);
         editor.clear();//xoa
         editor.commit();//xac nhan
-        mediaPlayer.stop();// tat nhac
         taoThongBao("Thông báo","Bạn Có Muốn Thoát").show();
     }
 

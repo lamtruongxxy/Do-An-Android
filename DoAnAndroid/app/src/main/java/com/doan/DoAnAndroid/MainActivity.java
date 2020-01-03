@@ -72,8 +72,6 @@ public class MainActivity extends AppCompatActivity  {
         startActivity(intent);
         //android:label="second";//ten lable
         //android:parentActivityName=".MainActivity";//chuyen ve lop cha
-
-
     }
 
     public void btnbangxephang(View view) {
