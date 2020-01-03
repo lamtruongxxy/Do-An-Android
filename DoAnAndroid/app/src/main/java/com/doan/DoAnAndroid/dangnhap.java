@@ -112,10 +112,14 @@ public class dangnhap extends AppCompatActivity {
                         taoThongBao("Thông báo", msg).show();
                     }
                     else {
-
-                        String msg = json.getString("message");
-                        Log.d("ThongBaoMSG",msg);
                         String token = "Bearer " + json.getString("token");
+                        String id = json.getJSONObject("user").getString("id");
+                        String ten_dang_nhap = json.getJSONObject("user").getString("ten_dang_nhap");
+                        Log.d("USER_ID",id+"");
+                        editor.putString("HOTEN",ten_dang_nhap);
+                        editor.commit();
+                        editor.putString("ID_USER",id);
+                        editor.commit();
                         editor.putString("TOKEN", token);
                         editor.commit();
                         launchActivityMenu();
