@@ -1,4 +1,4 @@
-package com.doan.DoAnAndroid;
+package com.doan.DoAnAndroid.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.doan.DoAnAndroid.ManHinhTroChoi;
+import com.doan.DoAnAndroid.R;
+import com.doan.DoAnAndroid.Class.clsLinhVuc;
 
 import java.util.ArrayList;
 

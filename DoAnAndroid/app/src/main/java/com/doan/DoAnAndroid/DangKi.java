@@ -8,12 +8,12 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
+
+import com.doan.DoAnAndroid.Loader.DangKyLoader;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,14 +22,6 @@ public class DangKi extends AppCompatActivity {
     private EditText txtHoTen, txtTenDangNhap, txtEmail, txtMK, txtReMK;
     private ImageView img_avatar;
     private Button btnDangKy;
-
-    final int REQUEST_PICK_IMAGE = 1;
-    private Uri uri;
-    private Bitmap bitmap;
-    private String uploadImg;
-
-    private int colorPrimary;
-    private int colorDisablePrimary;
 
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;

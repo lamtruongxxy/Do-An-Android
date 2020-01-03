@@ -1,10 +1,12 @@
-package com.doan.DoAnAndroid;
+package com.doan.DoAnAndroid.Loader;
 
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.loader.content.AsyncTaskLoader;
+
+import com.doan.DoAnAndroid.NetWorkUtils;
 
 public class LinhVucLoader extends AsyncTaskLoader <String> {
     private String token;

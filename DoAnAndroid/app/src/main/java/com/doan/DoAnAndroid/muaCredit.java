@@ -12,6 +12,10 @@ import androidx.loader.content.Loader;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.doan.DoAnAndroid.Adapter.CreditAdapter;
+import com.doan.DoAnAndroid.Class.Credit;
+import com.doan.DoAnAndroid.Loader.CreditLoader;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -58,16 +62,9 @@ public class muaCredit extends AppCompatActivity implements LoaderManager.Loader
     @Override
     public void finish() {
         super.finish();
-        //overridePendingTransition(R.anim.slide_left,R.anim.sile_out_right);
     }
 
-//    public void launchActivityProfile(View view) {
 
-    //    public void launchActivityProfile(View view) {
-
-//        startActivity(new Intent(CreditActivity.this,ProfileActivity.class));
-//        overridePendingTransition(R.anim.sile_right,R.anim.sile_out_left);
-//    }
     @NonNull
     @Override
     public Loader<String> onCreateLoader(int id, @Nullable Bundle args) {

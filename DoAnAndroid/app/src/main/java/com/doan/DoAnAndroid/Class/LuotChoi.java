@@ -1,4 +1,4 @@
-package com.doan.DoAnAndroid;
+package com.doan.DoAnAndroid.Class;
 
 public class LuotChoi {
     private int id;

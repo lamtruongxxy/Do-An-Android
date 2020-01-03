@@ -1,4 +1,4 @@
-package com.doan.DoAnAndroid;
+package com.doan.DoAnAndroid.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.doan.DoAnAndroid.Class.Credit;
+import com.doan.DoAnAndroid.R;
 
 import java.util.ArrayList;
 

@@ -11,6 +11,10 @@ import androidx.loader.content.Loader;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.doan.DoAnAndroid.Adapter.LinhVucAdapter;
+import com.doan.DoAnAndroid.Class.clsLinhVuc;
+import com.doan.DoAnAndroid.Loader.LinhVucLoader;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -16,6 +16,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.doan.DoAnAndroid.Adapter.LuotChoiAdapter;
+import com.doan.DoAnAndroid.Class.LuotChoi;
+import com.doan.DoAnAndroid.Loader.LichSuChoiLoader;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

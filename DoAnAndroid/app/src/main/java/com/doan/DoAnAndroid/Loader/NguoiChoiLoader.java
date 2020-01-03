@@ -1,4 +1,4 @@
-package com.doan.DoAnAndroid;
+package com.doan.DoAnAndroid.Loader;
 
 import android.content.Context;
 
@@ -6,8 +6,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.loader.content.AsyncTaskLoader;
 
-public class CreditLoader extends AsyncTaskLoader<String> {
-    private String token;
+import com.doan.DoAnAndroid.NetWorkUtils;
+
+public class NguoiChoiLoader extends AsyncTaskLoader<String> {
+    public NguoiChoiLoader(@NonNull Context context) {
+        super(context);
+    }
 
     @Override
     protected void onStartLoading() {
@@ -15,14 +19,9 @@ public class CreditLoader extends AsyncTaskLoader<String> {
         forceLoad();
     }
 
-    public CreditLoader(@NonNull Context context ,String token) {
-        super(context);
-        this.token = token;
-    }
-
     @Nullable
     @Override
     public String loadInBackground() {
-        return NetWorkUtils.doRequest("goi-credit","GET",null,token);
+         return NetWorkUtils.getJSONData("nguoi-choi/xep-hang","GET");
     }
 }

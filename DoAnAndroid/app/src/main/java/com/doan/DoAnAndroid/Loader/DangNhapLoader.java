@@ -1,7 +1,9 @@
-package com.doan.DoAnAndroid;
+package com.doan.DoAnAndroid.Loader;
 
 import android.os.AsyncTask;
 import android.util.Log;
+
+import com.doan.DoAnAndroid.NetWorkUtils;
 
 import java.util.HashMap;
 
